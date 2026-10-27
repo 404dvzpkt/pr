@@ -1,0 +1,16 @@
+{
+  "name": "skyworld-market",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkyWorld Stall - shared backend and portal for the Online Store, Stall Owner, Admin and Operator systems.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning server/index.js",
+    "dev": "node --no-warnings=ExperimentalWarning --watch server/index.js",
+    "seed": "node --no-warnings=ExperimentalWarning server/seed.js",
+    "seed:reset": "node --no-warnings=ExperimentalWarning server/seed.js --reset",
+    "test": "node --no-warnings=ExperimentalWarning tests/api.test.js"
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkyWorld Stall administrator portal: sign in or register the platform administrator role and open the admin dashboard.">
+  <title>Administrator portal · SkyWorld Stall</title>
+  <link rel="icon" href="logo.png">
+  <script src="/shared/theme.js"></script>
+  <link rel="stylesheet" href="/shared/base.css">
+  <link rel="stylesheet" href="/portal/portal.css?v=2">
+</head>
+<body class="portal-body" data-portal-role="admin">
+  <a class="skip-link" href="#authCard">Skip to sign in</a>
+
+  <header class="portal-top">
+    <a class="portal-brand" href="/portal/" aria-label="SkyWorld Stall portals">
+      <img src="/api/brand/logo" alt="">
+      <span><span class="pb-name">SkyWorld</span><span class="pb-sub">Stall · Admin portal</span></span>
+    </a>
+    <span class="spacer"></span>
+    <a class="top-link hide-xs" href="/store/">Browse store</a>
+    <a class="top-link hide-xs" href="/store/#/track">Track an order</a>
+    <a class="top-link" href="/portal/">All portals</a>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme" title="Switch colour theme">
+      <svg class="ic ic-moon" aria-hidden="true"><use href="/shared/icons.svg#i-moon"></use></svg>
+      <svg class="ic ic-sun" aria-hidden="true"><use href="/shared/icons.svg#i-sun"></use></svg>
+    </button>
+  </header>
+
+  <main class="portal-wrap">
+    <section class="portal-hero" aria-labelledby="portalTitle">
+      <span class="hero-eyebrow">Administrator portal · Platform oversight</span>
+      <h1 id="portalTitle">Keep the whole market <em>in view</em>.</h1>
+      <p class="hero-copy">The dedicated door for platform administrators. Review stall owners and stalls, manage roles, read analytics and reports, moderate feedback, inspect audit logs, and configure fees and settings — all from the admin dashboard.</p>
+
+      <div class="hero-points">
+        <div class="hero-point">
+          <span class="hp-ic"><svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-shield"></use></svg></span>
+          <div><strong>Oversight without impersonation</strong>Administrators can manage accounts and stalls, but never sign in as an owner or read an owner’s password.</div>
+        </div>
+        <div class="hero-point">
+          <span class="hp-ic"><svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-chart"></use></svg></span>
+          <div><strong>Numbers you can reconcile</strong>Gross sales, refunds, discounts, commission and net revenue come from the same stored orders as the owner and operator views.</div>
+        </div>
+        <div class="hero-point">
+          <span class="hp-ic"><svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-clipboard"></use></svg></span>
+          <div><strong>An audit trail</strong>Sensitive actions are recorded in activity logs, and backup exports are available without exposing provider secrets.</div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-card a1"><img src="/shared/covers/02.jpg" alt=""></div>
+        <div class="art-card a2"><img src="/shared/covers/05.jpg" alt=""></div>
+        <div class="art-card a3"><img src="/shared/covers/09.jpg" alt=""></div>
+        <span class="art-tag"><svg class="ic sm" aria-hidden="true"><use href="/shared/icons.svg#i-shield"></use></svg> Platform administration</span>
+      </div>
+    </section>
+
+    <section class="portal-panel" aria-live="polite">
+      <div class="auth-card" id="authCard">
+        <div class="loading-block"><span class="spinner"></span>Preparing the administrator portal…</div>
+      </div>
+      <p class="portal-note"><svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-info"></use></svg><span id="providerNote">Checking the server’s email and SMS delivery configuration…</span></p>
+    </section>
+  </main>
+
+  <footer class="portal-footer">
+    <span>© 2026 SkyWorld Stall. Demonstration environment with labelled sample data.</span>
+    <span class="demo-hint"><svg class="ic sm" aria-hidden="true"><use href="/shared/icons.svg#i-external"></use></svg><a href="/portal/owner/">Owner portal</a> · <a href="/portal/operator/">Operator portal</a> · <a href="/store/">Storefront</a></span>
+  </footer>
+
+  <div id="toasts" role="status" aria-live="polite"></div>
+  <noscript><div class="page narrow"><div class="notice er">SkyWorld Stall needs JavaScript enabled in your browser to sign in and manage the platform.</div></div></noscript>
+
+  <script src="/shared/api.js?v=3"></script>
+  <script src="/shared/ui.js"></script>
+  <script src="/portal/portal.js?v=6"></script>
+</body>
+</html>

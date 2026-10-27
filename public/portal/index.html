@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkyWorld Stall shared portal for customers, stall owners, administrators, and operators.">
+  <title>Sign in · SkyWorld Stall</title>
+  <link rel="icon" href="logo.png">
+  <script src="/shared/theme.js"></script>
+  <link rel="stylesheet" href="/shared/base.css">
+  <link rel="stylesheet" href="/portal/portal.css?v=2">
+</head>
+<body class="portal-body">
+  <a class="skip-link" href="#authCard">Skip to sign in</a>
+
+  <header class="portal-top">
+    <a class="portal-brand" href="/portal/" aria-label="SkyWorld Stall portal home">
+      <img src="/api/brand/logo" alt="">
+      <span><span class="pb-name">SkyWorld</span><span class="pb-sub">Stall · Est. 2025</span></span>
+    </a>
+    <span class="spacer"></span>
+    <a class="top-link hide-xs" href="/store/">Browse store</a>
+    <a class="top-link hide-xs" href="/store/#/track">Track an order</a>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme" title="Switch colour theme">
+      <svg class="ic ic-moon" aria-hidden="true"><use href="/shared/icons.svg#i-moon"></use></svg>
+      <svg class="ic ic-sun" aria-hidden="true"><use href="/shared/icons.svg#i-sun"></use></svg>
+    </button>
+  </header>
+
+  <main class="portal-wrap">
+    <section class="portal-hero portal-hero-brand" aria-labelledby="portalTitle">
+      <div class="hero-brand-block">
+        <img src="logo.png" alt="SkyWorld Stall logo" class="hero-logo">
+        <h1 id="portalTitle" class="hero-brand-title">SkyWorld Stall</h1>
+      </div>
+    </section>
+
+    <section class="portal-panel" aria-live="polite">
+      <div class="auth-card" id="authCard">
+        <div class="loading-block"><span class="spinner"></span>Preparing the portal…</div>
+      </div>
+      <p class="portal-note"><svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-info"></use></svg><span id="providerNote">Checking the server’s email and SMS delivery configuration…</span></p>
+    </section>
+  </main>
+
+  <footer class="portal-footer">
+    <span>© 2026 SkyWorld Stall. Demonstration environment with labelled sample data.</span>
+    <span class="demo-hint"><svg class="ic sm" aria-hidden="true"><use href="/shared/icons.svg#i-store"></use></svg><a href="/store/">Visit the storefront</a></span>
+  </footer>
+
+  <div id="toasts" role="status" aria-live="polite"></div>
+  <noscript><div class="page narrow"><div class="notice er">SkyWorld Stall needs JavaScript enabled in your browser to sign in and manage stalls.</div></div></noscript>
+
+  <script src="/shared/api.js?v=3"></script>
+  <script src="/shared/ui.js"></script>
+  <script src="/portal/portal.js?v=6"></script>
+</body>
+</html>

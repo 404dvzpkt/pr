@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyWorld Stall — Shop the stalls</title>
+  <meta name="description" content="Browse eleven independent stalls at SkyWorld Stall in Baguio. Clothes, shoes, bags, accessories and everyday finds.">
+  <link rel="icon" href="/api/brand/logo">
+  <link rel="stylesheet" href="/shared/base.css">
+  <link rel="stylesheet" href="/store/store.css?v=2">
+  <script src="/shared/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="SkyWorld Stall home">
+        <img src="/api/brand/logo" alt="">
+        <span class="brand-text">
+          <span class="brand-name">SkyWorld Stall</span>
+          <span class="brand-sub">Baguio · Since 2026</span>
+        </span>
+      </a>
+      <nav class="header-links" aria-label="Store">
+        <a href="#stalls">Choose stall</a>
+        <a href="#cart">Cart</a>
+        <a href="#orders">My orders</a>
+        <a href="#inbox">Inbox</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#track">Track order</a>
+      </nav>
+      <div class="header-spacer"></div>
+      <div class="header-actions">
+        <a class="header-cart" href="#cart" aria-label="Shopping cart">
+          <svg class="ic" aria-hidden="true"><use href="/shared/icons.svg#i-cart"></use></svg>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </a>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="ic ic-moon" aria-hidden="true"><use href="/shared/icons.svg#i-moon"></use></svg>
+          <svg class="ic ic-sun" aria-hidden="true"><use href="/shared/icons.svg#i-sun"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="store-mobile-nav" aria-label="Store sections">
+    <a href="#stalls">Choose stall</a>
+    <a href="#cart">Cart</a>
+    <a href="#orders">My orders</a>
+    <a href="#inbox">Inbox</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#track">Track order</a>
+  </nav>
+
+  <main id="app" tabindex="-1">
+    <div class="loading-block"><span class="spinner"></span>Opening the market…</div>
+    <noscript>
+      <div class="page"><div class="notice wa">SkyWorld Stall needs JavaScript enabled to browse stalls and place orders.</div></div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer store-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand-inline" href="#home">
+          <img src="/api/brand/logo" alt="">
+          <span>SkyWorld Stall</span>
+        </a>
+        <p class="tiny">A demonstration marketplace for Baguio's independent stall owners. Sample catalogue data is labelled where it appears.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#stalls">Choose stall</a>
+        <a href="#orders">My orders</a>
+        <a href="#track">Order lookup</a>
+        <a href="#feedback">Send feedback</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© <span id="year">2026</span> SkyWorld Stall</span>
+      <span>Payments are arranged with each stall. No card details are collected by this demo.</span>
+    </div>
+  </footer>
+
+  <script src="/shared/api.js?v=3"></script>
+  <script src="/shared/ui.js"></script>
+  <script src="/store/store.js?v=3"></script>
+</body>
+</html>
